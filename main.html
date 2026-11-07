@@ -3,33 +3,44 @@
 <html class="dark" lang="en">
 
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TTG7QQGR4E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TTG7QQGR4E');
+</script>
+
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <!-- Primary SEO -->
-    <title>Shivam Mishra | Neural Architect</title>
-    <meta name="description" content="High-performance engineer building production-grade LLM applications and scalable enterprise architectures. Expert in Prompt Engineering, Async Backend Processing, and Multi-agent orchestration."/>
+    <title>Shivam Mishra | Software Engineer &amp; Full-Stack Developer</title>
+    <meta name="description" content="Computer Science undergraduate at MMMUT Gorakhpur (2027, CGPA 8.35). I build full-stack and automation projects in Python, Java, and JavaScript, with experience in data engineering, Agile teamwork, and AI applications."/>
     <meta name="author" content="Shivam Mishra"/>
-    <meta name="keywords" content="Shivam Mishra, AI Engineer, LLM, Agentic AI, GenAI, NazarAI, MMMUT, Portfolio, Gemini, Groq, RAG, Machine Learning"/>
+    <meta name="keywords" content="Shivam Mishra, Software Engineer, Full Stack Developer, Python, Java, JavaScript, React, FastAPI, NazarAI, ArchMind, MMMUT, Portfolio"/>
 
     <!-- Open Graph / LinkedIn / Facebook -->
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://www.shiv-tech.me/"/>
-    <meta property="og:title" content="Shivam Mishra | Neural Architect"/>
-    <meta property="og:description" content="High-performance engineer building production AI systems — LLM agents, RAG pipelines, and agentic platforms."/>
+    <meta property="og:title" content="Shivam Mishra | Software Engineer &amp; Full-Stack Developer"/>
+    <meta property="og:description" content="Computer Science undergraduate at MMMUT Gorakhpur (2027, CGPA 8.35). I build full-stack and automation projects in Python, Java, and JavaScript, with experience in data engineering, Agile teamwork, and AI applications."/>
     <meta property="og:image" content="https://raw.githubusercontent.com/shiv9918/Shiv-portfolio/main/photo.jpg"/>
     <meta property="og:image:width" content="1200"/>
     <meta property="og:image:height" content="630"/>
-    <meta property="og:image:alt" content="Shivam Mishra — AI Engineer Portfolio"/>
+    <meta property="og:image:alt" content="Shivam Mishra — Software Engineer Portfolio"/>
     <meta property="og:site_name" content="Shivam Mishra | Portfolio"/>
     <meta property="og:locale" content="en_IN"/>
 
     <!-- Twitter / X Card -->
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:title" content="Shivam Mishra | Neural Architect"/>
-    <meta name="twitter:description" content="High-performance engineer building production AI systems — LLM agents, RAG pipelines, and agentic platforms."/>
+    <meta name="twitter:title" content="Shivam Mishra | Software Engineer &amp; Full-Stack Developer"/>
+    <meta name="twitter:description" content="Computer Science undergraduate at MMMUT Gorakhpur (2027, CGPA 8.35). I build full-stack and automation projects in Python, Java, and JavaScript, with experience in data engineering, Agile teamwork, and AI applications."/>
     <meta name="twitter:image" content="https://raw.githubusercontent.com/shiv9918/Shiv-portfolio/main/photo.jpg"/>
     <meta name="twitter:creator" content="@shiv9918"/>
 
+    <link rel="canonical" href="https://www.shiv-tech.me/"/>
     <!-- LinkedIn specific -->
     <meta property="og:profile:first_name" content="Shivam"/>
     <meta property="og:profile:last_name" content="Mishra"/>
@@ -209,7 +220,7 @@
         .animate-float {
             animation: float 6s ease-in-out infinite;
         }
-        
+
         #arsenal span.rounded-full {
             animation: pill-glow 3s ease-in-out infinite;
             transition: all 0.3s ease;
@@ -217,6 +228,14 @@
         #arsenal span.rounded-full:hover {
             transform: translateY(-2px);
             box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+        }
+        html { scroll-behavior: smooth; }
+        section[id] { scroll-margin-top: 6rem; }
+        a:focus-visible, button:focus-visible { outline: 2px solid #00d4ff; outline-offset: 5px; }
+        @media (max-width: 380px) { h1 { font-size: 3rem !important; } }
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            *, *::before, *::after { animation: none !important; transition: none !important; }
         }
     </style>
 </head>
@@ -230,23 +249,27 @@
         class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
         <div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
             <div class="text-2xl font-black text-cyan-400 tracking-tighter font-headline">SM</div>
-            <div class="hidden md:flex gap-10 items-center">
+            <div class="hidden md:flex gap-6 items-center">
+<a class="text-sm font-medium text-slate-300 hover:text-cyan-300" href="#experience">Experience</a>
                 <a class="font-['Space_Grotesk'] tracking-tight text-sm font-medium text-slate-300 hover:text-cyan-300 transition-all duration-300"
                     href="#projects">Projects</a>
                 <a class="font-['Space_Grotesk'] tracking-tight text-sm font-medium text-slate-300 hover:text-cyan-300 transition-all duration-300"
-                    href="#arsenal">Arsenal</a>
+                    href="#arsenal">Skills</a>
                 <a class="font-['Space_Grotesk'] tracking-tight text-sm font-medium text-slate-300 hover:text-cyan-300 transition-all duration-300"
-                    href="#timeline">Timeline</a>
+                    href="#timeline">Education</a>
                 <a class="font-['Space_Grotesk'] tracking-tight text-sm font-medium text-slate-300 hover:text-cyan-300 transition-all duration-300"
                     href="#contact">Contact</a>
-                <button
-                    class="bg-primary-container text-on-primary-fixed-variant px-6 py-2.5 rounded-full font-headline font-bold text-sm hover:shadow-[0_0_20px_rgba(0,212,255,0.4)] transition-all scale-100 active:scale-95">
-                    Let's Build
-                </button>
+                <a href="resume.pdf" target="_blank" rel="noopener"
+                    class="bg-primary-container text-on-primary-fixed-variant px-6 py-2.5 rounded-full font-headline font-bold text-sm hover:shadow-[0_0_20px_rgba(0,212,255,0.4)] transition-all scale-100 active:scale-95">Resume</a>
             </div>
-            <button class="md:hidden text-primary">
+            <button id="menu-toggle" type="button" aria-label="Open navigation" aria-controls="mobile-menu" aria-expanded="false" class="md:hidden text-primary">
                 <span class="material-symbols-outlined">menu</span>
             </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden border-t border-white/10 px-8 py-5 bg-slate-950">
+            <div class="flex flex-col gap-4 text-slate-200">
+                <a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#arsenal">Skills</a><a href="#timeline">Education</a><a href="#contact">Contact</a><a href="resume.pdf" download="Shivam_Mishra_Resume.pdf">Download Resume</a>
+            </div>
         </div>
     </nav>
     <main class="relative z-20">
@@ -256,114 +279,63 @@
                 <div class="space-y-8">
                     <div class="space-y-4">
                         <span
-                            class="inline-block px-4 py-1.5 rounded-full bg-primary-container/10 border border-primary/30 text-primary text-xs font-headline font-bold tracking-widest uppercase">Available
-                            for Innovation</span>
+                            class="inline-block px-4 py-1.5 rounded-full bg-primary-container/10 border border-primary/30 text-primary text-xs font-headline font-bold tracking-widest uppercase">Open to Software Engineering Jobs</span>
                         <h1
                             class="text-6xl md:text-8xl font-black font-headline tracking-tighter leading-tight text-gradient">
                             Hi, I'm <br />Shivam Mishra
                         </h1>
-                        <div class="h-12 overflow-hidden flex items-center">
+                        <div class="min-h-12 flex items-center">
                             <p class="text-2xl font-headline font-medium text-primary-fixed-dim">
-                                Full Stack AI Engineer
+                                Software Engineer · Full-Stack &amp; AI
                             </p>
                         </div>
                         <p class="text-lg text-on-surface-variant max-w-lg font-medium leading-relaxed">
-                            High-performance engineer building production-grade LLM applications and scalable enterprise architectures. Expert in Prompt Engineering, Async Backend Processing, and Multi-agent orchestration.
+                            Computer Science undergraduate at MMMUT Gorakhpur (2027, CGPA 8.35). I build full-stack and automation projects in Python, Java, and JavaScript, with experience in data engineering, Agile teamwork, and AI applications.
                         </p>
                     </div>
                     <div class="flex flex-wrap gap-4 pt-4">
-                        <button
-                            class="bg-primary-container text-on-primary font-headline font-bold px-8 py-4 rounded-xl shadow-[0_0_30px_rgba(0,212,255,0.2)] hover:shadow-[0_0_50px_rgba(0,212,255,0.4)] transition-all flex items-center gap-2">
-                            View Projects <span class="material-symbols-outlined text-xl">arrow_forward</span>
-                        </button>
-                        <button
-                            class="border border-outline-variant text-on-surface font-headline font-bold px-8 py-4 rounded-xl hover:bg-surface-container-low transition-all">
-                            Contact Me
-                        </button>
+                        <a href="#projects"
+                            class="bg-primary-container text-on-primary font-headline font-bold px-8 py-4 rounded-xl shadow-[0_0_30px_rgba(0,212,255,0.2)] hover:shadow-[0_0_50px_rgba(0,212,255,0.4)] transition-all flex items-center gap-2">View Projects <span class="material-symbols-outlined text-xl">arrow_forward</span>
+                        </a>
+                        <a href="resume.pdf" download="Shivam_Mishra_Resume.pdf"
+                            class="border border-outline-variant text-on-surface font-headline font-bold px-8 py-4 rounded-xl hover:bg-surface-container-low transition-all">Download Resume</a>
                     </div>
-                    <div class="flex gap-6 pt-6 text-outline hover:text-on-surface transition-colors">
+                    <div class="flex flex-wrap gap-6 pt-6 text-outline hover:text-on-surface transition-colors">
                         <a class="hover:text-primary transition-all hover:scale-105 flex items-center gap-1 font-medium"
-                            href="https://linkedin.com/in/shiv9918" target="_blank"><span class="material-symbols-outlined text-lg">link</span> LinkedIn</a>
+                            href="https://linkedin.com/in/shiv9918" target="_blank" rel="noopener"><span class="material-symbols-outlined text-lg">link</span> LinkedIn</a>
                         <a class="hover:text-primary transition-all hover:scale-105 flex items-center gap-1 font-medium"
-                            href="https://github.com/shiv9918" target="_blank"><span class="material-symbols-outlined text-lg">terminal</span> GitHub</a>
+                            href="https://github.com/shiv9918" target="_blank" rel="noopener"><span class="material-symbols-outlined text-lg">terminal</span> GitHub</a>
                         <a class="hover:text-primary transition-all hover:scale-105 flex items-center gap-1 font-medium"
-                            href="https://leetcode.com/u/Shiv_9918/" target="_blank"><span class="material-symbols-outlined text-lg">code</span> LeetCode</a>
+                            href="https://leetcode.com/u/Shiv_9918/" target="_blank" rel="noopener"><span class="material-symbols-outlined text-lg">code</span> LeetCode</a>
                     </div>
                 </div>
-                <!-- Terminal Display -->
-                <div class="relative group">
-                    <div
-                        class="absolute -inset-1 bg-gradient-to-r from-primary/30 to-secondary/30 blur-xl group-hover:opacity-60 transition-opacity opacity-30">
+                <!-- Profile summary -->
+                <div class="relative glass-card rounded-2xl overflow-hidden shadow-2xl border-outline-variant">
+                    <div class="bg-surface-container-high/80 px-6 py-4 border-b border-outline-variant flex items-center gap-3">
+                        <span class="w-3 h-3 rounded-full bg-primary" aria-hidden="true"></span><span class="text-xs font-headline tracking-widest text-on-surface-variant">ENGINEER PROFILE</span>
                     </div>
-                    <div class="relative glass-card rounded-2xl overflow-hidden shadow-2xl border-outline-variant">
-                        <div
-                            class="h-10 bg-surface-container-high/80 flex items-center px-4 gap-2 border-b border-outline-variant">
-                            <div class="w-3 h-3 rounded-full bg-error"></div>
-                            <div class="w-3 h-3 rounded-full bg-tertiary"></div>
-                            <div class="w-3 h-3 rounded-full bg-primary"></div>
-                            <span
-                                class="ml-4 text-[10px] font-headline text-on-surface-variant tracking-widest uppercase font-bold">neural_architecture.py</span>
-                        </div>
-                        <div
-                            class="p-6 font-mono text-sm leading-relaxed overflow-x-auto bg-surface-container-lowest/90">
-                            <div class="flex gap-4">
-                                <span class="text-outline-variant font-bold">01</span>
-                                <span class="text-secondary">import</span> <span
-                                    class="text-on-surface">langchain_core</span>
-                            </div>
-                            <div class="flex gap-4">
-                                <span class="text-outline-variant font-bold">02</span>
-                                <span class="text-on-surface"></span>
-                            </div>
-                            <div class="flex gap-4">
-                                <span class="text-outline-variant font-bold">03</span>
-                                <span class="text-primary-fixed-dim">class</span> <span
-                                    class="text-tertiary-fixed-dim">ProjectNazarAI</span>:
-                            </div>
-                            <div class="flex gap-4">
-                                <span class="text-outline-variant font-bold">04</span>
-                                <span class="pl-4 text-on-surface">def __init__(self):</span>
-                            </div>
-                            <div class="flex gap-4">
-                                <span class="text-outline-variant font-bold">05</span>
-                                <span class="pl-8 text-on-surface">self.model = </span><span
-                                    class="text-primary">"Gemini-1.5-Pro"</span>
-                            </div>
-                            <div class="flex gap-4">
-                                <span class="text-outline-variant font-bold">06</span>
-                                <span class="pl-8 text-on-surface">self.latency = </span><span
-                                    class="text-primary-container">"40% reduction"</span>
-                            </div>
-                            <div class="flex gap-4">
-                                <span class="text-outline-variant font-bold">07</span>
-                                <span class="pl-4 text-on-surface"></span>
-                            </div>
-                            <div class="flex gap-4">
-                                <span class="text-outline-variant font-bold">08</span>
-                                <span class="pl-4 text-on-surface">def build_impact(self):</span>
-                            </div>
-                            <div class="flex gap-4">
-                                <span class="text-outline-variant font-bold">09</span>
-                                <span class="pl-8 text-secondary">return</span> <span
-                                    class="text-on-surface">["Scalability", "AI Ops"]</span>
-                            </div>
-                        </div>
-                    </div>
+                    <dl class="p-8 space-y-6 font-mono text-sm">
+                        <div><dt class="text-secondary mb-1">education</dt><dd>B.Tech CSE · MMMUT · Class of 2027</dd></div>
+                        <div><dt class="text-secondary mb-1">experience</dt><dd>Product Engineer Intern · GetPost Labs</dd></div>
+                        <div><dt class="text-secondary mb-1">focus</dt><dd>Full-stack apps · Automation · RAG systems</dd></div>
+                        <div><dt class="text-secondary mb-1">leadership</dt><dd>President, FLUX · 50+ members</dd></div>
+                        <div class="border-t border-outline-variant pt-5 text-primary"><dt class="sr-only">Highlights</dt><dd>400+ coding problems. 3 cloud-deployed apps.</dd></div>
+                    </dl>
                 </div>
             </div>
         </section>
         <!-- Stats Section -->
         <section class="py-24 max-w-7xl mx-auto px-8">
-            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="glass-card stat-card-glow p-8 rounded-2xl group hover:border-primary transition-all duration-300">
                     <p class="text-outline text-xs font-headline uppercase tracking-widest mb-2 font-bold">Academics</p>
-                    <h3 class="text-4xl font-black font-headline text-primary counter" data-target="8.28">0.00</h3>
+                    <h3 class="text-4xl font-black font-headline text-primary counter" data-target="8.35">8.35</h3>
                     <p class="text-on-surface font-semibold mt-1">Current CGPA</p>
                 </div>
                 <div class="glass-card stat-card-glow p-8 rounded-2xl group hover:border-primary transition-all duration-300">
                     <p class="text-outline text-xs font-headline uppercase tracking-widest mb-2 font-bold">Algorithm</p>
-                    <h3 class="text-4xl font-black font-headline text-primary"><span class="counter" data-target="300">0</span>+</h3>
-                    <p class="text-on-surface font-semibold mt-1">LeetCode Solved</p>
+                    <h3 class="text-4xl font-black font-headline text-primary"><span class="counter" data-target="400">400</span>+</h3>
+                    <p class="text-on-surface font-semibold mt-1">Coding Problems Solved</p>
                 </div>
                 <div class="glass-card stat-card-glow p-8 rounded-2xl group hover:border-primary transition-all duration-300">
                     <p class="text-outline text-xs font-headline uppercase tracking-widest mb-2 font-bold">Recognition
@@ -373,272 +345,38 @@
                 </div>
                 <div class="glass-card stat-card-glow p-8 rounded-2xl group hover:border-primary transition-all duration-300">
                     <p class="text-outline text-xs font-headline uppercase tracking-widest mb-2 font-bold">Impact</p>
-                    <h3 class="text-4xl font-black font-headline text-primary counter" data-target="3">0</h3>
-                    <p class="text-on-surface font-semibold mt-1">Production Apps</p>
+                    <h3 class="text-4xl font-black font-headline text-primary counter" data-target="3">3</h3>
+                    <p class="text-on-surface font-semibold mt-1">Cloud-Deployed Apps</p>
                 </div>
             </div>
         </section>
         <!-- Projects Section -->
-        <section class="py-24 bg-surface-container-low/50" id="projects">
-            <div class="max-w-7xl mx-auto px-8">
-                <div class="mb-16">
-                    <h2 class="text-5xl font-black font-headline tracking-tighter inline-block relative">
-                        Things I've Built
-                        <span
-                            class="absolute -bottom-4 left-0 w-2/3 h-1.5 bg-gradient-to-r from-primary to-transparent rounded-full"></span>
-                    </h2>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- NazarAI - Featured -->
-                    <div
-                        class="md:col-span-2 glass-card rounded-3xl overflow-hidden flex flex-col lg:flex-row border-primary/30 hover:border-primary transition-all group shadow-lg">
-                        <div class="lg:w-1/2 h-64 lg:h-auto overflow-hidden">
-                            <img alt="Modern abstract AI interface with glowing nodes and futuristic data visualization"
-                                class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700 grayscale group-hover:grayscale-0"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiQEA9aoixLdaOQo4PQaSMJUdN-NBVMPRqgCG_MYx8uE2ZWCQa5paLpV8QgcDDtzD-AQH0tLG921entiSn8eSOZTVqxlSwSS3_DcQcOp2gcBWthW-Mx8bHNyAX3tmJxxp0430CSet748mBGvoVHdLELbADfBfxQjlvKWmQmsIhyax9au3vLN-x_hm2Bj5pdWevnVZhSHSm_9UkxLRP7WkcKI9l3lX_693lhqvt7sXNcXaMBQBxuFNL0JP3LJbbPJBufOURKtBjSMP2" />
-                        </div>
-                        <div class="lg:w-1/2 p-10 flex flex-col justify-center">
-                            <div class="flex items-center gap-2 mb-4">
-                                <span
-                                    class="bg-primary/20 text-primary px-3 py-1 rounded-full text-xs font-headline font-bold uppercase tracking-wider border border-primary/40">National
-                                    Finalist</span>
-                            </div>
-                            <h3 class="text-3xl font-black font-headline mb-4">NazarAI</h3>
-                            <p class="text-on-surface-variant font-medium leading-relaxed mb-6">
-                                A high-performance AI analytics engine achieving 40% faster resolution in complex data
-                                pipelines. Architected with Gemini 1.5 Pro and real-time Twilio integration for
-                                proactive alerts.
-                            </p>
-                            <div class="flex flex-wrap gap-2 mb-8">
-                                <span
-                                    class="text-xs font-bold px-3 py-1 bg-surface-container rounded-md border border-outline-variant">React</span>
-                                <span
-                                    class="text-xs font-bold px-3 py-1 bg-surface-container rounded-md border border-outline-variant">TypeScript</span>
-                                <span
-                                    class="text-xs font-bold px-3 py-1 bg-surface-container rounded-md border border-outline-variant">Gemini
-                                    AI</span>
-                                <span
-                                    class="text-xs font-bold px-3 py-1 bg-surface-container rounded-md border border-outline-variant">Twilio</span>
-                            </div>
-                            <div class="flex gap-4">
-                                <a class="flex items-center gap-2 text-primary font-headline font-bold hover:gap-4 transition-all uppercase tracking-widest text-sm"
-                                    href="https://www.nazarai.live/" target="_blank">
-                                    Live Demo <span class="material-symbols-outlined text-sm">link</span>
-                                </a>
-                                <a class="flex items-center gap-2 text-outline hover:text-primary font-headline font-bold hover:gap-4 transition-all uppercase tracking-widest text-sm"
-                                    href="https://github.com/shiv9918/NazarAI" target="_blank">
-                                    Code <span class="material-symbols-outlined text-sm">terminal</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Flux College -->
-                    <div class="glass-card rounded-3xl p-8 hover:border-primary transition-all group shadow-lg">
-                        <div class="h-48 mb-6 rounded-2xl overflow-hidden border border-outline-variant">
-                            <img alt="Digital collaboration platform interface"
-                                class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 grayscale group-hover:grayscale-0"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7vkdOSlf_FeGNKNtfncTgTWb6wqkJpP_2X8M6pXf_dML3S0spBPsRht46d7Ot4zH55St0lleWPGCpr77bovPxow2KJm-GoiPMrJ_08YPhNOF1a0goahlUU8N4u3HWDNQVp2IpkP6XGhL9NjsvXbirpFxG8yey2vgg4YnImJ_x4v_AeOKr8WDVgYRWA2YNOZyDlTbocQ_YbqKnOf56SCxuBa4meMGikUH5zpzRCcyzVD82LhhnriAcDfrTQVqsSSUfJyUWmuKpWgto" />
-                        </div>
-                        <h3 class="text-2xl font-black font-headline mb-3">Flux Platform</h3>
-                        <p class="text-on-surface-variant font-medium text-sm mb-6 leading-relaxed">
-                            Full-cycle academic ecosystem supporting 500+ daily active users. Built on the MERN stack
-                            with JWT security protocols and real-time document sync.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span
-                                class="text-[10px] font-bold px-2 py-1 bg-surface-container rounded-md border border-outline-variant">MongoDB</span>
-                            <span
-                                class="text-[10px] font-bold px-2 py-1 bg-surface-container rounded-md border border-outline-variant">Express</span>
-                            <span
-                                class="text-[10px] font-bold px-2 py-1 bg-surface-container rounded-md border border-outline-variant">Node.js</span>
-                        </div>
-                        <div class="flex gap-4 mt-auto pt-4">
-                            <a class="text-primary text-sm font-headline font-bold flex items-center gap-2 uppercase tracking-widest hover:gap-3 transition-all"
-                                href="https://www.flux.org.in/" target="_blank">Demo <span class="material-symbols-outlined text-sm">link</span></a>
-                            <a class="text-outline hover:text-primary text-sm font-headline font-bold flex items-center gap-2 uppercase tracking-widest hover:gap-3 transition-all"
-                                href="https://github.com/shiv9918/flux-website" target="_blank">Code <span class="material-symbols-outlined text-sm">terminal</span></a>
-                        </div>
-                    </div>
-                    <!-- ExamSparks -->
-                    <div class="glass-card rounded-3xl p-8 hover:border-primary transition-all group shadow-lg">
-                        <div class="h-48 mb-6 rounded-2xl overflow-hidden border border-outline-variant">
-                            <img alt="Sleek online testing interface"
-                                class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 grayscale group-hover:grayscale-0"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlb7kvldMnEt5dnlr6N-bnsvF6va8tKYSzgmHAyLlWPmJFTKyjFy3OwMn-1qyM0J2NTbUs9Ve_Hht3RFfRuiM6bY62jF3Ne9ltiVm9Otyjq-kQlX9uYZRmqLHTidFAs6lQlhRJehowIPOF4enc2Rp-bgL8-XYyqyF_X7oGytsRSsl0FO3a98vCN7JaslPz2y0Z65QW1KHn5fPxOrZpARkBOa5VH4DVMTypm6f6YzJUp25_BR23pYDvYdQqwGhqZaWvj1tOz17vDNKp" />
-                        </div>
-                        <h3 class="text-2xl font-black font-headline mb-3">ExamSparks</h3>
-                        <p class="text-on-surface-variant font-medium text-sm mb-6 leading-relaxed">
-                            Robust assessment platform featuring dynamic question generation and performance analytics.
-                            Flask backend with PostgreSQL for complex relational queries.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span
-                                class="text-[10px] font-bold px-2 py-1 bg-surface-container rounded-md border border-outline-variant">React</span>
-                            <span
-                                class="text-[10px] font-bold px-2 py-1 bg-surface-container rounded-md border border-outline-variant">Flask</span>
-                            <span
-                                class="text-[10px] font-bold px-2 py-1 bg-surface-container rounded-md border border-outline-variant">PostgreSQL</span>
-                        </div>
-                        <div class="flex gap-4 mt-auto pt-4">
-                            <a class="text-primary text-sm font-headline font-bold flex items-center gap-2 uppercase tracking-widest hover:gap-3 transition-all"
-                                href="https://exam-spark-self.vercel.app/" target="_blank">Demo <span class="material-symbols-outlined text-sm">link</span></a>
-                            <a class="text-outline hover:text-primary text-sm font-headline font-bold flex items-center gap-2 uppercase tracking-widest hover:gap-3 transition-all"
-                                href="https://github.com/shiv9918/exam-spark" target="_blank">Code <span class="material-symbols-outlined text-sm">terminal</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<section class="py-24 bg-surface-container-low/50" id="projects"><div class="max-w-7xl mx-auto px-6 md:px-8"><h2 class="text-4xl md:text-5xl font-black font-headline mb-5">Things I've Built</h2><p class="text-on-surface-variant mb-12">Full-stack applications, automated analytics, and code intelligence.</p><div class="grid grid-cols-1 lg:grid-cols-3 gap-8"><article class="glass-card rounded-3xl p-6 md:p-8 hover:border-primary transition-all group shadow-lg flex flex-col min-w-0">
+ <div class="flex items-center justify-between mb-8"><span aria-hidden="true" class="material-symbols-outlined text-5xl text-primary">location_city</span><span class="text-xs uppercase tracking-widest text-outline">Live project</span></div>
+ <h3 class="text-3xl font-black font-headline mb-2">NazarAI</h3><p class="text-primary text-sm font-bold mb-4">Agentic Civic Automation Platform</p><p class="text-xs text-outline mb-5">August 2025 · India Innovates 2026 National Finalist</p>
+ <p class="text-on-surface-variant leading-relaxed mb-6">Civic issue reporting with Gemini Flash vision to classify citizen-uploaded photos, Twilio WhatsApp alerts, and JWT-secured REST endpoints. Presented at India Innovates 2026 in New Delhi, among 1,200+ participating teams.</p><div class="flex flex-wrap gap-2 mb-8"><span class="bg-primary/10 border border-primary/30 text-primary px-3 py-1.5 rounded-full text-xs font-headline font-bold">React.js</span><span class="bg-primary/10 border border-primary/30 text-primary px-3 py-1.5 rounded-full text-xs font-headline font-bold">TypeScript</span><span class="bg-primary/10 border border-primary/30 text-primary px-3 py-1.5 rounded-full text-xs font-headline font-bold">Node.js</span><span class="bg-primary/10 border border-primary/30 text-primary px-3 py-1.5 rounded-full text-xs font-headline font-bold">Express.js</span><span class="bg-primary/10 border border-primary/30 text-primary px-3 py-1.5 rounded-full text-xs font-headline font-bold">Gemini AI Vision</span><span class="bg-primary/10 border border-primary/30 text-primary px-3 py-1.5 rounded-full text-xs font-headline font-bold">Twilio WhatsApp API</span><span class="bg-primary/10 border border-primary/30 text-primary px-3 py-1.5 rounded-full text-xs font-headline font-bold">JWT</span></div>
+ <a href="https://www.nazarai.live/" target="_blank" rel="noopener" class="text-primary font-headline font-bold mt-auto inline-flex items-center gap-2">View live project <span aria-hidden="true" class="material-symbols-outlined text-sm">north_east</span><span class="sr-only">: NazarAI</span></a></article><article class="glass-card rounded-3xl p-6 md:p-8 hover:border-primary transition-all group shadow-lg flex flex-col min-w-0">
+ <div class="flex items-center justify-between mb-8"><span aria-hidden="true" class="material-symbols-outlined text-5xl text-primary">analytics</span><span class="text-xs uppercase tracking-widest text-outline">Live project</span></div>
+ <h3 class="text-3xl font-black font-headline mb-2">Auto Data Analyst</h3><p class="text-primary text-sm font-bold mb-4">Automated EDA Platform</p><p class="text-xs text-outline mb-5">July 2025</p>
+ <p class="text-on-surface-variant leading-relaxed mb-6">Automatically cleans, analyzes, and visualizes uploaded CSV datasets with Pandas, FastAPI, and Streamlit. Uses Groq LLaMA 3.3 70B to automate chart generation and report creation, reducing manual analysis effort.</p><div class="flex flex-wrap gap-2 mb-8"><span class="bg-primary/10 border border-primary/30 text-primary px-3 py-1.5 rounded-full text-xs font-headline font-bold">Python</span><span class="bg-primary/10 border border-primary/30 text-primary px-3 py-1.5 rounded-full text-xs font-headline font-bold">Pandas</span><span class="bg-primary/10 border border-primary/30 text-primary px-3 py-1.5 rounded-full text-xs font-headline font-bold">FastAPI</span><span class="bg-primary/10 border border-primary/30 text-primary px-3 py-1.5 rounded-full text-xs font-headline font-bold">Streamlit</span><span class="bg-primary/10 border border-primary/30 text-primary px-3 py-1.5 rounded-full text-xs font-headline font-bold">Groq LLaMA 3.3 70B</span></div>
+ <a href="https://auto-data-analyst-66aw.onrender.com/" target="_blank" rel="noopener" class="text-primary font-headline font-bold mt-auto inline-flex items-center gap-2">View live project <span aria-hidden="true" class="material-symbols-outlined text-sm">north_east</span><span class="sr-only">: Auto Data Analyst</span></a></article><article class="glass-card rounded-3xl p-6 md:p-8 hover:border-primary transition-all group shadow-lg flex flex-col min-w-0">
+ <div class="flex items-center justify-between mb-8"><span aria-hidden="true" class="material-symbols-outlined text-5xl text-primary">hub</span><span class="text-xs uppercase tracking-widest text-outline">Live project</span></div>
+ <h3 class="text-3xl font-black font-headline mb-2">ArchMind</h3><p class="text-primary text-sm font-bold mb-4">Multi-Agent Code Intelligence (RAG)</p><p class="text-xs text-outline mb-5">Deployed on Vercel + Render</p>
+ <p class="text-on-surface-variant leading-relaxed mb-6">Parses source code with AST analysis, builds a NetworkX knowledge graph, and retrieves context with hybrid Qdrant and BM25 search. LangGraph orchestrates the multi-agent RAG workflow.</p><div class="flex flex-wrap gap-2 mb-8"><span class="bg-primary/10 border border-primary/30 text-primary px-3 py-1.5 rounded-full text-xs font-headline font-bold">Python</span><span class="bg-primary/10 border border-primary/30 text-primary px-3 py-1.5 rounded-full text-xs font-headline font-bold">LangGraph</span><span class="bg-primary/10 border border-primary/30 text-primary px-3 py-1.5 rounded-full text-xs font-headline font-bold">Qdrant</span><span class="bg-primary/10 border border-primary/30 text-primary px-3 py-1.5 rounded-full text-xs font-headline font-bold">NetworkX</span><span class="bg-primary/10 border border-primary/30 text-primary px-3 py-1.5 rounded-full text-xs font-headline font-bold">BM25</span><span class="bg-primary/10 border border-primary/30 text-primary px-3 py-1.5 rounded-full text-xs font-headline font-bold">Groq LLaMA 3.3 70B</span></div>
+ <a href="https://archimind-one.vercel.app/" target="_blank" rel="noopener" class="text-primary font-headline font-bold mt-auto inline-flex items-center gap-2">View live project <span aria-hidden="true" class="material-symbols-outlined text-sm">north_east</span><span class="sr-only">: ArchMind</span></a></article></div></div></section>
+<!-- Experience and leadership -->
+<section class="py-24 max-w-7xl mx-auto px-6 md:px-8" id="experience">
+<h2 class="text-4xl font-black font-headline mb-12">Experience &amp; Leadership</h2>
+<div class="grid lg:grid-cols-2 gap-8">
+<article class="glass-card rounded-3xl p-6 md:p-10"><p class="text-primary text-sm font-bold mb-3">May 2026 – Aug 2026 · Remote, Brisbane, Australia</p><h3 class="text-2xl font-bold font-headline mb-2">Product Engineer Intern</h3><p class="text-secondary font-semibold mb-2">Data Science &amp; Team Coordinator</p><p class="text-on-surface-variant mb-6">GetPost Labs Pty Ltd</p><ul class="list-disc pl-5 space-y-4 text-on-surface-variant leading-relaxed"><li>Led a cross-functional team of 4 in an Agile environment, modeling how crude oil, gold reserves, USD/INR, and inflation affect India’s economic stability using RBI, IMF, World Bank, and OPEC data.</li><li>Built automated ETL pipelines and BI dashboards tracking 5 macroeconomic indicators, cutting manual processing time by 60%.</li><li>Managed sprints, knowledge repositories, and milestones with 100% on-time delivery.</li></ul></article>
+<article class="glass-card rounded-3xl p-6 md:p-10"><p class="text-primary text-sm font-bold mb-3">College Technical Society · MMMUT Gorakhpur</p><h3 class="text-2xl font-bold font-headline mb-2">President, FLUX</h3><p class="text-on-surface-variant mb-6">Technical delivery and team coordination</p><ul class="list-disc pl-5 space-y-4 text-on-surface-variant leading-relaxed"><li>Lead 50+ members and manage technical events, planning, logistics, and cross-team coordination.</li><li>Led backend development of a live event management platform used by 500+ users, improving delivery through code reviews and Git workflows.</li><li>Coordinate with faculty, sponsors, and student teams across concurrent initiatives.</li></ul></article>
+</div></section>
         <!-- Tech Arsenal Section -->
-        <section class="py-24 max-w-7xl mx-auto px-8" id="arsenal">
-            <div class="mb-16 text-center">
-                <h2 class="text-4xl font-black font-headline tracking-tighter">Technical Arsenal</h2>
-                <p class="text-outline mt-2 uppercase tracking-widest text-xs font-black">Tools of the trade</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Group 1 -->
-                <div class="space-y-4">
-                    <h4 class="text-primary-fixed-dim font-headline font-bold text-sm tracking-widest uppercase mb-4">AI
-                        &amp; Data</h4>
-                    <div class="flex flex-wrap gap-3">
-                        <span
-                            class="bg-primary/10 border border-primary/40 text-primary px-4 py-2 rounded-full text-xs font-headline font-bold">LLMs</span>
-                        <span
-                            class="bg-primary/10 border border-primary/40 text-primary px-4 py-2 rounded-full text-xs font-headline font-bold">Gemini Vision</span>
-                        <span
-                            class="bg-primary/10 border border-primary/40 text-primary px-4 py-2 rounded-full text-xs font-headline font-bold">Prompt Engineering</span>
-                        <span
-                            class="bg-primary/10 border border-primary/40 text-primary px-4 py-2 rounded-full text-xs font-headline font-bold">OpenAI/Anthropic APIs</span>
-                    </div>
-                </div>
-                <!-- Group 2 -->
-                <div class="space-y-4">
-                    <h4 class="text-secondary font-headline font-bold text-sm tracking-widest uppercase mb-4">Frontend
-                    </h4>
-                    <div class="flex flex-wrap gap-3">
-                        <span
-                            class="bg-secondary/10 border border-secondary/40 text-secondary px-4 py-2 rounded-full text-xs font-headline font-bold">React.js</span>
-                        <span
-                            class="bg-secondary/10 border border-secondary/40 text-secondary px-4 py-2 rounded-full text-xs font-headline font-bold">TypeScript</span>
-                        <span
-                            class="bg-secondary/10 border border-secondary/40 text-secondary px-4 py-2 rounded-full text-xs font-headline font-bold">Tailwind CSS</span>
-                        <span
-                            class="bg-secondary/10 border border-secondary/40 text-secondary px-4 py-2 rounded-full text-xs font-headline font-bold">HTML5/CSS3</span>
-                        <span
-                            class="bg-secondary/10 border border-secondary/40 text-secondary px-4 py-2 rounded-full text-xs font-headline font-bold">Redux/Zustand</span>
-                        <span
-                            class="bg-secondary/10 border border-secondary/40 text-secondary px-4 py-2 rounded-full text-xs font-headline font-bold">Vite</span>
-                    </div>
-                </div>
-                <!-- Group 3 -->
-                <div class="space-y-4">
-                    <h4 class="text-tertiary font-headline font-bold text-sm tracking-widest uppercase mb-4">Backend
-                    </h4>
-                    <div class="flex flex-wrap gap-3">
-                        <span
-                            class="bg-tertiary/10 border border-tertiary/40 text-tertiary px-4 py-2 rounded-full text-xs font-headline font-bold">Python (Flask/FastAPI)</span>
-                        <span
-                            class="bg-tertiary/10 border border-tertiary/40 text-tertiary px-4 py-2 rounded-full text-xs font-headline font-bold">Node.js/Express</span>
-                        <span
-                            class="bg-tertiary/10 border border-tertiary/40 text-tertiary px-4 py-2 rounded-full text-xs font-headline font-bold">RESTful APIs</span>
-                        <span
-                            class="bg-tertiary/10 border border-tertiary/40 text-tertiary px-4 py-2 rounded-full text-xs font-headline font-bold">SQLAlchemy</span>
-                        <span
-                            class="bg-tertiary/10 border border-tertiary/40 text-tertiary px-4 py-2 rounded-full text-xs font-headline font-bold">JWT Auth</span>
-                    </div>
-                </div>
-                <!-- Group 4 -->
-                <div class="space-y-4">
-                    <h4 class="text-primary font-headline font-bold text-sm tracking-widest uppercase mb-4">Databases &amp; Tools</h4>
-                    <div class="flex flex-wrap gap-3">
-                        <span
-                            class="bg-primary/10 border border-primary/40 text-primary px-4 py-2 rounded-full text-xs font-headline font-bold">PostgreSQL / MySQL</span>
-                        <span
-                            class="bg-primary/10 border border-primary/40 text-primary px-4 py-2 rounded-full text-xs font-headline font-bold">MongoDB</span>
-                        <span
-                            class="bg-primary/10 border border-primary/40 text-primary px-4 py-2 rounded-full text-xs font-headline font-bold">Docker</span>
-                        <span
-                            class="bg-primary/10 border border-primary/40 text-primary px-4 py-2 rounded-full text-xs font-headline font-bold">CI/CD (GitHub Actions)</span>
-                        <span
-                            class="bg-primary/10 border border-primary/40 text-primary px-4 py-2 rounded-full text-xs font-headline font-bold">Vercel / Render</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+<section class="py-24 max-w-7xl mx-auto px-6 md:px-8" id="arsenal"><h2 class="text-4xl font-black font-headline mb-12 text-center">Technical Skills</h2><div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10"><div class="space-y-5"><h3 class="text-primary font-headline font-bold text-lg">Languages</h3><div class="flex flex-wrap gap-2"><span class="bg-primary/10 border border-primary/30 text-primary px-3 py-1.5 rounded-full text-xs font-headline font-bold">Python</span><span class="bg-primary/10 border border-primary/30 text-primary px-3 py-1.5 rounded-full text-xs font-headline font-bold">Java</span><span class="bg-primary/10 border border-primary/30 text-primary px-3 py-1.5 rounded-full text-xs font-headline font-bold">JavaScript</span><span class="bg-primary/10 border border-primary/30 text-primary px-3 py-1.5 rounded-full text-xs font-headline font-bold">TypeScript</span></div></div><div class="space-y-5"><h3 class="text-secondary font-headline font-bold text-lg">Web &amp; Backend</h3><div class="flex flex-wrap gap-2"><span class="bg-secondary/10 border border-secondary/30 text-secondary px-3 py-1.5 rounded-full text-xs font-headline font-bold">React.js</span><span class="bg-secondary/10 border border-secondary/30 text-secondary px-3 py-1.5 rounded-full text-xs font-headline font-bold">Node.js</span><span class="bg-secondary/10 border border-secondary/30 text-secondary px-3 py-1.5 rounded-full text-xs font-headline font-bold">Express.js</span><span class="bg-secondary/10 border border-secondary/30 text-secondary px-3 py-1.5 rounded-full text-xs font-headline font-bold">FastAPI</span><span class="bg-secondary/10 border border-secondary/30 text-secondary px-3 py-1.5 rounded-full text-xs font-headline font-bold">REST APIs</span><span class="bg-secondary/10 border border-secondary/30 text-secondary px-3 py-1.5 rounded-full text-xs font-headline font-bold">JWT Authentication</span></div></div><div class="space-y-5"><h3 class="text-tertiary font-headline font-bold text-lg">Data &amp; AI</h3><div class="flex flex-wrap gap-2"><span class="bg-tertiary/10 border border-tertiary/30 text-tertiary px-3 py-1.5 rounded-full text-xs font-headline font-bold">NumPy</span><span class="bg-tertiary/10 border border-tertiary/30 text-tertiary px-3 py-1.5 rounded-full text-xs font-headline font-bold">Pandas</span><span class="bg-tertiary/10 border border-tertiary/30 text-tertiary px-3 py-1.5 rounded-full text-xs font-headline font-bold">Streamlit</span><span class="bg-tertiary/10 border border-tertiary/30 text-tertiary px-3 py-1.5 rounded-full text-xs font-headline font-bold">Gemini API</span><span class="bg-tertiary/10 border border-tertiary/30 text-tertiary px-3 py-1.5 rounded-full text-xs font-headline font-bold">Groq API</span><span class="bg-tertiary/10 border border-tertiary/30 text-tertiary px-3 py-1.5 rounded-full text-xs font-headline font-bold">Claude API</span><span class="bg-tertiary/10 border border-tertiary/30 text-tertiary px-3 py-1.5 rounded-full text-xs font-headline font-bold">RAG</span><span class="bg-tertiary/10 border border-tertiary/30 text-tertiary px-3 py-1.5 rounded-full text-xs font-headline font-bold">Prompt Engineering</span></div></div><div class="space-y-5"><h3 class="text-primary font-headline font-bold text-lg">Tools &amp; Practices</h3><div class="flex flex-wrap gap-2"><span class="bg-primary/10 border border-primary/30 text-primary px-3 py-1.5 rounded-full text-xs font-headline font-bold">Git</span><span class="bg-primary/10 border border-primary/30 text-primary px-3 py-1.5 rounded-full text-xs font-headline font-bold">GitHub</span><span class="bg-primary/10 border border-primary/30 text-primary px-3 py-1.5 rounded-full text-xs font-headline font-bold">Agile/Scrum</span><span class="bg-primary/10 border border-primary/30 text-primary px-3 py-1.5 rounded-full text-xs font-headline font-bold">Jira</span><span class="bg-primary/10 border border-primary/30 text-primary px-3 py-1.5 rounded-full text-xs font-headline font-bold">Confluence</span><span class="bg-primary/10 border border-primary/30 text-primary px-3 py-1.5 rounded-full text-xs font-headline font-bold">ETL Pipelines</span><span class="bg-primary/10 border border-primary/30 text-primary px-3 py-1.5 rounded-full text-xs font-headline font-bold">Automation Scripts</span><span class="bg-primary/10 border border-primary/30 text-primary px-3 py-1.5 rounded-full text-xs font-headline font-bold">Code Reviews</span></div></div><div class="space-y-5"><h3 class="text-secondary font-headline font-bold text-lg">Cloud &amp; Deployment</h3><div class="flex flex-wrap gap-2"><span class="bg-secondary/10 border border-secondary/30 text-secondary px-3 py-1.5 rounded-full text-xs font-headline font-bold">Vercel</span><span class="bg-secondary/10 border border-secondary/30 text-secondary px-3 py-1.5 rounded-full text-xs font-headline font-bold">Render</span></div></div><div class="space-y-5"><h3 class="text-tertiary font-headline font-bold text-lg">Professional Skills</h3><div class="flex flex-wrap gap-2"><span class="bg-tertiary/10 border border-tertiary/30 text-tertiary px-3 py-1.5 rounded-full text-xs font-headline font-bold">Written &amp; Verbal Communication</span><span class="bg-tertiary/10 border border-tertiary/30 text-tertiary px-3 py-1.5 rounded-full text-xs font-headline font-bold">Cross-functional Collaboration</span><span class="bg-tertiary/10 border border-tertiary/30 text-tertiary px-3 py-1.5 rounded-full text-xs font-headline font-bold">Analytical Thinking</span><span class="bg-tertiary/10 border border-tertiary/30 text-tertiary px-3 py-1.5 rounded-full text-xs font-headline font-bold">Attention to Detail</span><span class="bg-tertiary/10 border border-tertiary/30 text-tertiary px-3 py-1.5 rounded-full text-xs font-headline font-bold">Problem Solving</span></div></div></div></section>
         <!-- Timeline Section -->
-        <section class="py-24 bg-surface-container-low/30" id="timeline">
-            <div class="max-w-4xl mx-auto px-8">
-                <div class="mb-16">
-                    <h2 class="text-4xl font-black font-headline tracking-tighter">Academic Journey</h2>
-                </div>
-                <div class="space-y-12">
-                    <div class="flex gap-8 group">
-                        <div class="flex flex-col items-center">
-                            <div
-                                class="w-10 h-10 rounded-full bg-primary-container/20 border-2 border-primary-container flex items-center justify-center">
-                                <div class="w-3 h-3 rounded-full bg-primary-container shadow-[0_0_10px_#00d4ff]"></div>
-                            </div>
-                            <div class="w-0.5 h-full bg-gradient-to-b from-primary-container to-transparent mt-2"></div>
-                        </div>
-                        <div class="pb-12">
-                            <span class="text-primary font-headline font-bold text-sm">2024 — 2027</span>
-                            <h3 class="text-2xl font-black font-headline mt-1">B.Tech in Computer Science &amp; Engineering</h3>
-                            <p class="text-on-surface font-semibold">Madan Mohan Malaviya University of Technology
-                                (MMMUT), Gorakhpur</p>
-                            <p class="mt-4 text-on-surface-variant font-medium leading-relaxed max-w-xl">Focusing on
-                                Artificial Intelligence, distributed systems, and advanced algorithmic design. Actively
-                                participating in national-level innovation challenges.</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-8 group">
-                        <div class="flex flex-col items-center">
-                            <div
-                                class="w-10 h-10 rounded-full bg-surface-container-high border-2 border-outline-variant flex items-center justify-center">
-                                <div class="w-3 h-3 rounded-full bg-outline"></div>
-                            </div>
-                            <div class="w-0.5 h-full bg-gradient-to-b from-outline-variant to-transparent mt-2"></div>
-                        </div>
-                        <div class="pb-12">
-                            <span class="text-outline font-headline font-bold text-sm">2021 — 2024</span>
-                            <h3 class="text-2xl font-black font-headline mt-1">Diploma in Computer Science &amp; Engineering</h3>
-                            <p class="text-on-surface font-semibold">Government Polytechnic Premdhar Patti, Pratapgarh</p>
-                            <p class="mt-4 text-on-surface-variant font-medium leading-relaxed max-w-xl">Graduated with
-                                81.08%. Specialized in core software development fundamentals and web architecture.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<section class="py-24 bg-surface-container-low/30" id="timeline"><div class="max-w-4xl mx-auto px-6 md:px-8"><h2 class="text-4xl font-black font-headline mb-12">Education</h2><div class="space-y-10 border-l border-primary/30 pl-6 md:pl-10"><article><p class="text-primary text-sm font-bold mb-2">2024 – 2027</p><h3 class="text-2xl font-bold font-headline mb-2">B.Tech, Computer Science &amp; Engineering</h3><p class="text-on-surface-variant mb-3">Madan Mohan Malaviya University of Technology, Gorakhpur</p><p class="text-secondary font-bold">CGPA: 8.35</p></article><article><p class="text-primary text-sm font-bold mb-2">2021 – 2024</p><h3 class="text-2xl font-bold font-headline mb-2">Diploma, Computer Science &amp; Engineering</h3><p class="text-on-surface-variant mb-3">Government Polytechnic Pratapgarh</p><p class="text-secondary font-bold">81.08% · BTE Uttar Pradesh</p></article><article><p class="text-primary text-sm font-bold mb-2">2021</p><h3 class="text-2xl font-bold font-headline mb-2">Saint John Inter College</h3><p class="text-on-surface-variant mb-3">UP Board, Uttar Pradesh</p><p class="text-secondary font-bold">86%</p></article></div><p class="mt-10 text-on-surface-variant leading-relaxed"><strong class="text-on-surface">Coursework:</strong> Data Structures and Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks.</p></div></section>
         <!-- Recognition -->
-        <section class="py-24 max-w-7xl mx-auto px-8">
-            <div class="mb-16">
-                <h2 class="text-4xl font-black font-headline tracking-tighter">Recognitions</h2>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="glass-card stat-card-glow p-8 rounded-2xl border-l-4 border-l-primary shadow-md">
-                    <span
-                        class="text-primary text-xs font-bold font-headline uppercase tracking-widest">Innovation</span>
-                    <h4 class="text-xl font-bold font-headline mt-2">National Finalist @ India Innovates 2026</h4>
-                    <p class="text-on-surface-variant font-medium mt-3 text-sm">Ranked among the top innovators
-                        nationally for solving critical infrastructure problems using AI.</p>
-                </div>
-                <div class="glass-card stat-card-glow p-8 rounded-2xl border-l-4 border-l-secondary shadow-md">
-                    <span
-                        class="text-secondary text-xs font-bold font-headline uppercase tracking-widest">Hackathon</span>
-                    <h4 class="text-xl font-bold font-headline mt-2">Top 10 Finalist @ DecodexX</h4>
-                    <p class="text-on-surface-variant font-medium mt-3 text-sm">Recognized for building a rapid-response
-                        emergency dashboard during a 36-hour sprint.</p>
-                </div>
-                <div class="glass-card stat-card-glow p-8 rounded-2xl border-l-4 border-l-tertiary shadow-md">
-                    <span
-                        class="text-tertiary text-xs font-bold font-headline uppercase tracking-widest">Certification</span>
-                    <h4 class="text-xl font-bold font-headline mt-2">Advanced AI Architectures</h4>
-                    <p class="text-on-surface-variant font-medium mt-3 text-sm">Specialized certification in deploying
-                        Large Language Models and fine-tuning transformer architectures.</p>
-                </div>
-            </div>
-        </section>
+<section class="py-24 max-w-7xl mx-auto px-6 md:px-8" id="achievements"><h2 class="text-4xl font-black font-headline mb-12">Achievements &amp; Certifications</h2><div class="grid md:grid-cols-2 gap-6"><article class="glass-card stat-card-glow p-8 rounded-2xl border-l-4 border-l-primary"><h3 class="text-xl font-bold font-headline mb-3">National Finalist · India Innovates 2026</h3><p class="text-on-surface-variant leading-relaxed">Presented NazarAI at Bharat Mandapam, New Delhi, among 1,200+ engineering teams.</p></article><article class="glass-card stat-card-glow p-8 rounded-2xl border-l-4 border-l-secondary"><h3 class="text-xl font-bold font-headline mb-3">Top 10 · DecodeX National Hackathon</h3><p class="text-on-surface-variant leading-relaxed">Ranked in the top 10 of 250 teams at NLDIMSR Mumbai for a data-driven solution.</p></article><article class="glass-card stat-card-glow p-8 rounded-2xl border-l-4 border-l-tertiary"><h3 class="text-xl font-bold font-headline mb-3">400+ Coding Problems</h3><p class="text-on-surface-variant leading-relaxed">Solved on LeetCode and other coding platforms, strengthening data structures, algorithms, and problem-solving skills.</p></article><article class="glass-card stat-card-glow p-8 rounded-2xl border-l-4 border-l-primary"><h3 class="text-xl font-bold font-headline mb-3">Certifications</h3><p class="text-on-surface-variant leading-relaxed">Udemy Python (2025: Advanced OOP and Backend Engineering) and Cisco Data Science Certification.</p></article></div></section>
         <!-- Contact Section -->
         <section class="py-32 relative overflow-hidden" id="contact">
             <div class="absolute inset-0 bg-primary-container/10 -z-10 border-t border-outline-variant"></div>
@@ -646,31 +384,31 @@
                 <h2 class="text-5xl md:text-7xl font-black font-headline tracking-tighter mb-8 text-gradient">Let's
                     Build <br />Something Exceptional</h2>
                 <p class="text-lg text-on-surface-variant font-semibold max-w-2xl mx-auto mb-12">
-                    Open for collaborations on high-impact AI products, research opportunities, or technical challenges.
+                    Open to software engineering, full-stack, backend, and AI job opportunities. Let’s build useful applications and solve meaningful problems together.
                 </p>
                 <div class="flex flex-col items-center gap-8">
-                    <a href="mailto:2024022016@mmmut.ac.in"
-                        class="group relative px-12 py-6 bg-primary-container text-on-primary-fixed-variant font-black font-headline text-2xl rounded-2xl transition-all hover:scale-105 active:scale-95 shadow-xl inline-block">
+                    <a href="mailto:shivammishra01329@gmail.com"
+                        class="group relative px-6 md:px-12 py-6 bg-primary-container text-on-primary-fixed-variant font-black font-headline text-2xl rounded-2xl transition-all hover:scale-105 active:scale-95 shadow-xl inline-block">
                         Send Me an Email
                         <div
                             class="absolute -inset-1 bg-primary blur-lg opacity-10 group-hover:opacity-30 transition-opacity">
                         </div>
                     </a>
-                    <div class="flex gap-12 mt-8">
+                    <div class="flex flex-col md:flex-row flex-wrap justify-center gap-8 mt-8 w-full">
                         <div class="flex flex-col items-center">
                             <span class="material-symbols-outlined text-primary mb-2">location_on</span>
                             <span class="text-xs uppercase tracking-widest text-outline font-black">Gorakhpur,
                                 India</span>
                         </div>
-                        <div class="flex flex-col items-center pl-8 ml-8 border-l border-outline-variant/30">
+                        <div class="flex flex-col items-center min-w-0">
                             <span class="material-symbols-outlined text-primary mb-2">call</span>
                             <span
                                 class="text-xs uppercase tracking-widest text-outline font-black">+91-9628993700</span>
                         </div>
-                        <div class="flex flex-col items-center pl-8 ml-8 border-l border-outline-variant/30">
+                        <div class="flex flex-col items-center min-w-0">
                             <span class="material-symbols-outlined text-primary mb-2">alternate_email</span>
                             <span
-                                class="text-xs uppercase tracking-widest text-outline font-black">2024022016@mmmut.ac.in</span>
+                                class="text-xs break-all text-outline font-black">shivammishra01329@gmail.com</span>
                         </div>
                     </div>
                 </div>
@@ -683,61 +421,60 @@
             <div class="text-lg font-bold text-slate-200 font-headline uppercase tracking-widest">SM</div>
             <div
                 class="text-slate-400 font-['Space_Grotesk'] text-[10px] font-bold uppercase tracking-widest text-center md:text-left">
-                © 2024 Shivam Mishra. The Neural Architect.
+                © 2026 Shivam Mishra. Software Engineer.
             </div>
             <div class="flex gap-8">
                 <a class="text-slate-400 hover:text-cyan-400 font-bold font-['Space_Grotesk'] text-[10px] uppercase tracking-widest"
-                    href="https://github.com/shiv9918" target="_blank">GitHub</a>
+                    href="https://github.com/shiv9918" target="_blank" rel="noopener">GitHub</a>
                 <a class="text-slate-400 hover:text-cyan-400 font-bold font-['Space_Grotesk'] text-[10px] uppercase tracking-widest"
-                    href="https://linkedin.com/in/shiv9918" target="_blank">LinkedIn</a>
+                    href="https://linkedin.com/in/shiv9918" target="_blank" rel="noopener">LinkedIn</a>
                 <a class="text-slate-400 hover:text-cyan-400 font-bold font-['Space_Grotesk'] text-[10px] uppercase tracking-widest"
-                    href="https://leetcode.com/u/Shiv_9918/" target="_blank">LeetCode</a>
+                    href="https://leetcode.com/u/Shiv_9918/" target="_blank" rel="noopener">LeetCode</a>
                 <a class="text-slate-400 hover:text-cyan-400 font-bold font-['Space_Grotesk'] text-[10px] uppercase tracking-widest"
-                    href="mailto:2024022016@mmmut.ac.in">Email</a>
+                    href="mailto:shivammishra01329@gmail.com">Email</a>
             </div>
         </div>
     </footer>
     <script>
-        const counters = document.querySelectorAll('.counter');
-        const speed = 200;
-
-        const startCounter = (counter) => {
-            const updateCount = () => {
-                const targetText = counter.getAttribute('data-target');
-                if (!targetText) return;
-                
-                const isFloat = targetText.includes('.');
-                const target = parseFloat(targetText);
-                const countText = counter.innerText.replace(/,/g, '').replace('+', '');
-                const count = parseFloat(countText) || 0;
-                
-                const inc = target / speed;
-
-                if (count < target) {
-                    const newValue = isFloat ? (count + inc).toFixed(2) : Math.ceil(count + inc);
-                    counter.innerText = newValue;
-                    setTimeout(updateCount, 10);
-                } else {
-                    counter.innerText = targetText;
-                }
-            };
-            updateCount();
-        };
-
-        const observerOptions = {
-            threshold: 0.1
-        };
-
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if(entry.isIntersecting) {
-                    startCounter(entry.target);
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        function closeMenu() {
+            mobileMenu.classList.add('hidden');
+            menuToggle.setAttribute('aria-expanded', 'false');
+            menuToggle.setAttribute('aria-label', 'Open navigation');
+        }
+        menuToggle.addEventListener('click', () => {
+            const expanded = menuToggle.getAttribute('aria-expanded') !== 'true';
+            mobileMenu.classList.toggle('hidden', !expanded);
+            menuToggle.setAttribute('aria-expanded', String(expanded));
+            menuToggle.setAttribute('aria-label', expanded ? 'Close navigation' : 'Open navigation');
+        });
+        mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+        document.addEventListener('keydown', event => {
+            if (event.key === 'Escape' && menuToggle.getAttribute('aria-expanded') === 'true') {
+                closeMenu(); menuToggle.focus();
+            }
+        });
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (!reduceMotion && 'IntersectionObserver' in window) {
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) return;
                     observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
-
-        counters.forEach(counter => observer.observe(counter));
+                    const counter = entry.target;
+                    const target = Number(counter.dataset.target);
+                    const decimals = counter.dataset.target.includes('.') ? 2 : 0;
+                    const start = performance.now();
+                    function tick(now) {
+                        const progress = Math.min((now - start) / 900, 1);
+                        counter.textContent = (target * progress).toFixed(decimals);
+                        if (progress < 1) requestAnimationFrame(tick);
+                    }
+                    requestAnimationFrame(tick);
+                });
+            }, { threshold: 0.1 });
+            document.querySelectorAll('.counter').forEach(counter => observer.observe(counter));
+        }
     </script>
 </body>
 
